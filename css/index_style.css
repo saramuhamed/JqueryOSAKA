@@ -1,0 +1,235 @@
+
+#options-box
+{
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    z-index: 9999;
+    
+}
+#options-box li
+{
+    width: 35px;
+    height: 35px;
+    background-color: tomato;
+    display: inline-block;
+    cursor: pointer;
+}
+#options-box i 
+{
+    background-color: #ff206e;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.colors-box
+{
+    border: solid 2px #ff206e;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+}
+.bg-black
+{
+    background-color: black;
+    padding: 0px 50px;
+    transition: padding 1s , background-color 1s;
+}
+body
+{
+    overflow: hidden;
+}
+#loading
+{
+    background-color: black;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999999999999;
+}
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+header
+{
+    height: 620px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.header-caption 
+{
+    color: #fff;
+}
+.header-caption h1
+{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.header-caption a
+{
+    color: #ff206e;   
+}
+.social-icons
+{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.social-icons i
+{
+    color: #fff;
+    padding: 10px;
+    border:solid 1px rgba(255,255,255,.25);
+    border-radius: 50%;
+}
+#about
+{
+    background-image: url(../images/light_dot.jpg);
+}
+.title
+{
+    position: relative;
+    font-weight: 800;
+}
+.title h2
+{
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: 800;
+
+}
+.title h3
+{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+}
+
+.image-me
+{
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+#about h6
+{
+    color: #ff206e;
+}
+#testimonials
+{
+    font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-indicators
+{
+    position: static;
+}
+.carousel-indicators li
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+.carousel-item img
+{
+    width: 85px;
+  
+}
+
+
+.carousel-item h6
+{
+    color: #555;
+    position: relative;
+}
+.carousel-item h6::after
+{
+
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 47%;
+    width:6%;
+    height: 2px;
+    background-color: #ff206e;
+    transition: width 1s , left 1s;
+    
+}
+
+
+.carousel-item:hover  h6::after
+{
+    width:10%;
+    left: 45%;
+
+   
+}
+
+#profile
+{
+    font-family: 'segoe ui light';
+}
+/*load screen*/
+.spinner {
+    margin: 450px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
